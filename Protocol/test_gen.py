@@ -10,8 +10,8 @@ r_size, bfrate, stream_size = sys.argv[1], sys.argv[2], sys.argv[3]
 sss, sfs, sts, nt = int(sys.argv[4]), int(sys.argv[5]), int(sys.argv[6]), int(sys.argv[7])
 
 # set up tests each test
-# tests = np.arange(sss, sfs+sts, sts)
-tests = [128, 256, 512, 1024]
+tests = np.arange(sss, sfs+sts, sts)
+# tests = [128, 256, 512, 1024]
 num_tests = len(tests)*nt
 tests_run = 0
 

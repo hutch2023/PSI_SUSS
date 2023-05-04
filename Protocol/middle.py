@@ -151,7 +151,7 @@ kst_size = str(k_size)
 test_type = str(size_alice) + "_" + str(size_bob) + "_" + str(bfr) + "_" + str(stream_size)
 
 # Write times to times file
-times_file = open("../data_collection/times.csv", "a")
+times_file = open("../Data/times.csv", "a")
 times_file.write(test_type      + "," +
                 sender_msg_time + "," + 
                 sender_hsh_time + "," + 
@@ -164,7 +164,7 @@ times_file.write(test_type      + "," +
 times_file.close()
 
 # write sizes to sizes file
-sizes_file = open("../data_collection/sizes.csv", "a")
+sizes_file = open("../Data/sizes.csv", "a")
 sizes_file.write(test_type + "," +
                 msg_size + "," + 
                 pol_size + "," + 
